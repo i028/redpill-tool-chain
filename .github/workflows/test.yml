@@ -1,4 +1,4 @@
-name: 构建
+name: Build DS920+
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: 编译 "${{matrix.platform}} ${{matrix.version}}"
+    name: Build "${{matrix.platform}} ${{matrix.version}}"
     strategy:
       fail-fast: false
       matrix:
